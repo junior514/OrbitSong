@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".activities.GeneroActivity">
+
+
+    <LinearLayout
+        android:id="@+id/contenedor_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_medio"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/activityorbitsong_tv_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P"
+            android:textColor="@color/white"
+            android:background="@drawable/texto_perfil"
+            style="@style/texto_perfil"
+            />
+
+        <Button
+            android:id="@+id/activityorbitsong_btn_genero"
+            style="@style/MenuButom"
+            app:backgroundTint="@null"
+            android:layout_width="@dimen/width_butom"
+            android:layout_height="@dimen/height_butom"
+            android:background="@drawable/btnmenu_borde"
+            android:text="Género"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/activityorbitsong_btn_biblioteca"
+            style="@style/MenuButom"
+            app:backgroundTint="@null"
+            android:layout_width="@dimen/width_butom"
+            android:layout_height="@dimen/height_butom"
+            android:background="@drawable/btnmenu_borde"
+            android:text="Biblioteca"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/activityorbitsong_btn_artistas"
+            style="@style/MenuButom"
+            app:backgroundTint="@null"
+            android:layout_width="@dimen/width_butom"
+            android:layout_height="@dimen/height_butom"
+            android:background="@drawable/btnmenu_borde"
+            android:text="Artistas"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_busqueda"
+        android:layout_width="@dimen/width_medible"
+        android:layout_height="wrap_content"
+        android:hint="Buscar..."
+        android:inputType="text"
+        style="@style/edittex_buscar"
+        android:background="@drawable/btnmenu_borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenedor_horizontal"
+        />
+
+    <FrameLayout
+        android:layout_width="@dimen/width_carta"
+        android:layout_height="@dimen/width_carta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_busqueda"
+        android:background="@drawable/shape_card"
+        style="@style/FrameLayout"
+        android:elevation="4dp">
+
+        <!-- Imagen de fondo -->
+        <ImageView
+            android:id="@+id/bg_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rock_fondo" />
+
+        <!-- Sombra negra semitransparente encima de la imagen -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/sombra" /> <!-- negro con 50% opacidad -->
+
+        <!-- Texto encima de la sombra -->
+        <TextView
+            android:id="@+id/texto_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Rock"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

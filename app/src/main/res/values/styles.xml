@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Titulo_Principal">
+        <item name="android:width">@dimen/width_bajo</item>
+        <item name="android:textSize">@dimen/texto_supertitulo</item>
+        <!--        <item name="android:textColor">@color/red</item>-->
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Pregunta1">
+        <item name="android:width">@dimen/width_bajo</item>
+        <item name="android:textSize">@dimen/texto_normal</item>
+        <!--        <item name="android:textColor">@color/red</item>-->
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Texto_Registro">
+        <item name="android:width">@dimen/width_bajo</item>
+        <item name="android:textSize">@dimen/texto_normal</item>
+        <!--        <item name="android:textColor">@color/red</item>-->
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="BotonRegistro">
+        <item name="android:backgroundTint">@drawable/btn_borde</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:textSize">@dimen/texto_normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MenuButom">
+        <item name="android:width">@dimen/width_butom</item>
+        <item name="android:layout_marginStart">@dimen/margin_medio</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medio</item>
+        <item name="android:padding">@dimen/padding_cero</item>
+        <item name="android:paddingLeft">@dimen/padding_cero</item>
+        <item name="android:paddingStart">@dimen/padding_cero</item>
+        <item name="android:paddingBottom">@dimen/padding_cero</item>
+    </style>
+
+    <style name="texto_perfil">
+        <item name="android:paddingLeft">@dimen/padding_grande</item>
+        <item name="android:paddingTop">@dimen/padding_medio</item>
+        <item name="android:paddingBottom">@dimen/padding_medio</item>
+        <item name="android:paddingRight">@dimen/padding_grande</item>
+        <item name="android:layout_marginStart">@dimen/margin_medio</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medio</item>
+    </style>
+
+    <style name="edittex_buscar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:padding">@dimen/padding_pequeno</item>
+        <item name="android:layout_marginTop">@dimen/margin_mediogrande</item>
+    </style>
+
+    <style name="FrameLayout">
+        <item name="android:layout_marginTop">@dimen/margin_mediogrande</item>
+        <item name="android:layout_marginStart">@dimen/margin_medio</item>
+    </style>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".activities.RegistroActivity">
+
+    <ImageView
+        android:id="@+id/activityorbitsong_img_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/logo_orbisong"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/margin_mediogrande"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activityorbitsong_tv_fraseregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actreg_tv_frace"
+        android:paddingEnd="@dimen/padding_grande"
+        android:paddingStart="@dimen/padding_grande"
+        android:textColor="@color/white"
+        style="@style/Titulo_Principal"
+        android:layout_marginTop="@dimen/margin_medio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityorbitsong_img_logo" />
+
+<!--  Google recomienda que todos los elementos táctiles (botones, campos de texto, etc.) tengan al menos 48dp x 48dp de tamaño:  android:minHeight="48dp"-->
+    <EditText
+        android:id="@+id/activityorbitsong_et_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_grande"
+        android:paddingBottom="@dimen/padding_pequeno"
+        android:paddingTop="@dimen/padding_pequeno"
+        android:paddingStart="@dimen/padding_medio"
+        android:layout_marginStart="@dimen/margin_grande"
+        android:layout_marginEnd="@dimen/margin_grande"
+        android:background="@color/white"
+        android:hint="@string/actreg_et_correo"
+        style="@style/EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityorbitsong_tv_fraseregistro"
+        />
+
+
+    <EditText
+        android:id="@+id/activityorbitsong_et_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mediogrande"
+        android:paddingBottom="@dimen/padding_pequeno"
+        android:paddingTop="@dimen/padding_pequeno"
+        android:paddingStart="@dimen/padding_medio"
+        android:layout_marginStart="@dimen/margin_grande"
+        android:layout_marginEnd="@dimen/margin_grande"
+        android:background="@color/white"
+        android:hint="@string/actreg_et_nombre"
+        style="@style/EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityorbitsong_et_correo"
+        />
+
+
+    <EditText
+        android:id="@+id/activityorbitsong_et_apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mediogrande"
+        android:paddingBottom="@dimen/padding_pequeno"
+        android:paddingTop="@dimen/padding_pequeno"
+        android:paddingStart="@dimen/padding_medio"
+        android:layout_marginStart="@dimen/margin_grande"
+        android:layout_marginEnd="@dimen/margin_grande"
+        android:background="@color/white"
+        android:hint="@string/actreg_et_apellido"
+        style="@style/EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityorbitsong_et_nombre"
+        />
+
+
+    <EditText
+        android:id="@+id/activityorbitsong_et_nombreusuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mediogrande"
+        android:paddingBottom="@dimen/padding_pequeno"
+        android:paddingTop="@dimen/padding_pequeno"
+        android:paddingStart="@dimen/padding_medio"
+        android:layout_marginStart="@dimen/margin_grande"
+        android:layout_marginEnd="@dimen/margin_grande"
+        android:background="@color/white"
+        android:hint="@string/actreg_et_nombreusuario"
+        style="@style/EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityorbitsong_et_apellido"
+        />
+
+
+    <EditText
+        android:id="@+id/activityorbitsong_et_contrasenareg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mediogrande"
+        android:paddingBottom="@dimen/padding_pequeno"
+        android:paddingTop="@dimen/padding_pequeno"
+        android:paddingStart="@dimen/padding_medio"
+        android:layout_marginStart="@dimen/margin_grande"
+        android:layout_marginEnd="@dimen/margin_grande"
+        android:background="@color/white"
+        android:hint="@string/actini_contrasena"
+        style="@style/EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityorbitsong_et_nombreusuario"
+        />
+
+
+    <Button
+        android:id="@+id/activityorbitsong_btn_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_grande"
+        android:layout_marginStart="@dimen/margin_grande"
+        android:layout_marginEnd="@dimen/margin_grande"
+        android:backgroundTint="@color/Orange"
+        android:text="@string/activity_btn_registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityorbitsong_et_contrasenareg"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/activityorbitsong_tv_pregunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actreg_et_pregunta2"
+        android:paddingEnd="@dimen/padding_grande"
+        android:paddingStart="@dimen/padding_grande"
+        android:textColor="@color/white"
+        style="@style/Pregunta1"
+        android:layout_marginTop="@dimen/margin_mediogrande"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityorbitsong_btn_registrar" />
+
+    <TextView
+        android:id="@+id/activityorbitsong_tv_iniciasesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclickInicioSesion"
+        android:text="@string/activity_btn_iniciarsesion"
+        android:paddingEnd="@dimen/padding_grande"
+        android:paddingStart="@dimen/padding_grande"
+        android:textColor="@color/white"
+        style="@style/Texto_Registro"
+        android:layout_marginTop="@dimen/margin_medio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityorbitsong_tv_pregunta2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

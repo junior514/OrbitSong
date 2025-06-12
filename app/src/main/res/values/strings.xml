@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">OrbitSong</string>
+
+    <!--    primera pantalla de inicio-->
+    <string name="refran_orbitsong">Tu mundo musical, en un solo lugar</string>
+    <string name="activity_btn_iniciarsesion">Iniciar Sesión</string>
+    <string name="activity_btn_registrar">Registrarse</string>
+
+    <!--    pantalla de inicio de sesión-->
+    <string name="frasesesion_orbitsong">Inicia Sesión y Disfruta</string>
+    <string name="actini_usuariocorreo">Correo</string>
+    <string name="actini_contrasena">Contraseña</string>
+    <string name="actini_preguntainicio">¿No tienes una Cuenta?</string>
+    <string name="actini_btn_ingresar">Ingresar</string>
+
+
+    <!--    pantalla de inicio de Registro-->
+    <string name="actreg_tv_frace">Unete y disfruta de tu musica favorita</string>
+    <string name="actreg_et_correo">Correo</string>
+    <string name="actreg_et_nombre">Nombre</string>
+    <string name="actreg_et_apellido">Apellido</string>
+    <string name="actreg_et_nombreusuario">Nombre Usuario</string>
+    <string name="actreg_et_pregunta2">¿Ya tienes una cuenta?</string>
+
+</resources>

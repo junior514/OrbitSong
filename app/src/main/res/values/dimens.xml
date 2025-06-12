@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="texto_supertitulo">38sp</dimen>
+    <dimen name="texto_normal">14sp</dimen>
+    <dimen name="texto_titulo">24sp</dimen>
+
+    <dimen name="padding_pequeno">4dp</dimen>
+    <dimen name="padding_medio">8dp</dimen>
+    <dimen name="padding_grande">16dp</dimen>
+    <dimen name="padding_cero">0dp</dimen>
+
+    <dimen name="margin_pequeno">4dp</dimen>
+    <dimen name="margin_medio">8dp</dimen>
+    <dimen name="margin_mediogrande">20dp</dimen>
+    <dimen name="margin_grande">40dp</dimen>
+    <dimen name="margin_supergrande">76dp</dimen>
+
+    <dimen name="boton_altura">40dp</dimen>
+    <dimen name="boton_ancho">200dp</dimen>
+
+    <dimen name="width_bajo">400dp</dimen>
+    <dimen name="width_medible">350dp</dimen>
+    <dimen name="width_carta">150dp</dimen>
+    <dimen name="width_alto">100%</dimen>
+    <dimen name="width_butom">90dp</dimen>
+    <dimen name="height_butom">28dp</dimen>
+
+
+</resources>
