@@ -164,13 +164,13 @@ Perfil de Usuario
       </td>
       <td align="center">
         <b>🧑‍💻 Frans Espinoza Pilco</b><br>
-        <sub>Desarrollador Full Stack</sub>
+        <sub>Desarrollador Backend</sub>
       </td>
     </tr>
     <tr>
       <td align="center">
         <b>🧑‍💻 Garcia Bracho Maickel Adrian</b><br>
-        <sub>Desarrollador Mobile</sub>
+        <sub>Analista de Basese de Datos</sub>
       </td>
       <td align="center">
         <b>🧑‍💻 Cristhoper Thomy Gotto Santa Cruz</b><br>
