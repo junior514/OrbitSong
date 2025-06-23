@@ -1,4 +1,5 @@
 package com.example.orbitsong.api;
+import com.example.orbitsong.models.Genero;
 import com.example.orbitsong.models.Usuario;
 import retrofit2.Call;
 import retrofit2.http.*;
@@ -27,4 +28,7 @@ public interface ApiService {
     // Actualizar usuario
     @PUT("api/usuarios/{id}")
     Call<Usuario> actualizarUsuario(@Path("id") Long id, @Body Usuario usuario);
+
+    @GET("api/generos")
+    Call<Genero[]> listadoGeneros();
 }

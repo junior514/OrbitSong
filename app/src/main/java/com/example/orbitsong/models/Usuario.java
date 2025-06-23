@@ -17,6 +17,7 @@ public class Usuario {
     @SerializedName("fechaRegistro")
     private String fechaRegistro;
 
+
     // Constructores
     public Usuario() {}
 
@@ -50,6 +51,8 @@ public class Usuario {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    //public String[] getGeneros() { this.generos; }
 
     public String getContrasena() {
         return contrasena;

@@ -75,40 +75,23 @@
         app:layout_constraintTop_toBottomOf="@+id/contenedor_horizontal"
         />
 
-    <FrameLayout
-        android:layout_width="@dimen/width_carta"
-        android:layout_height="@dimen/width_carta"
-        app:layout_constraintStart_toStartOf="parent"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/et_busqueda"
-        android:background="@drawable/shape_card"
-        style="@style/FrameLayout"
-        android:elevation="4dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Imagen de fondo -->
-        <ImageView
-            android:id="@+id/bg_imagen"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/rock_fondo" />
+            android:layout_height="wrap_content"
+            android:id="@+id/contenedor_generos"
+            android:padding="16dp"
+            android:orientation="vertical"
+            />
 
-        <!-- Sombra negra semitransparente encima de la imagen -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/sombra" /> <!-- negro con 50% opacidad -->
-
-        <!-- Texto encima de la sombra -->
-        <TextView
-            android:id="@+id/texto_categoria"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Rock"
-            android:textColor="@android:color/white"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
-    </FrameLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
